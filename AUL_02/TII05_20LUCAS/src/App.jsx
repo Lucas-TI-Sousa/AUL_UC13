@@ -7,9 +7,13 @@ import PaginaNova from './PaginaNova.jsx'
 function App() {
   const [count, setCount] = useState(0)
 
+  const teste = () => {
+    alert("teste!");
+}
+
   return (
     <>
-    <PaginaNova/>
+    <PaginaNova  numero={10} comondo={teste}/>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
