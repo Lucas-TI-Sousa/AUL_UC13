@@ -38,6 +38,12 @@ function App() {
     definirPagina("inicio");
   }
 
+  const deletar = (index) => {
+    const lista = listaUpdate.filter((_, i) => i !== index);
+    updateLista(lista)
+
+  }
+
   return (
     <>
       <div>
@@ -52,7 +58,7 @@ function App() {
         <>
           <br/>
           <button onClick={adicionar}>Adicionar</button>
-          <Lista lista={listaUpdate} />
+          <Lista lista={listaUpdate} onDelete= {deletar} />
         </>
       )}
 

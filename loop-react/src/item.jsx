@@ -2,13 +2,13 @@ import {Fragment } from 'react';
 import Lista from './lista.jsx';
 
 
-function item({nome}) {
+function item({nome, onDelete}) {
     return (
         <>
             <div>
                 nome: {nome} <br/>
                 <button>Editar</button>
-                <button>Remover</button>
+                <button onClick={onDelete}>Remover</button>
             </div> 
             <br/>
             
